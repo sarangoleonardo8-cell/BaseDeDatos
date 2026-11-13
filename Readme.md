@@ -11,6 +11,7 @@
 ### 📋 Información Académica
 * **👨‍🎓 Estudiante:** Jefferson Leonardo Sarango Luzón
 * **🏛️ Institución:** Universidad Nacional de Loja (UNL) — *FEIRNNR*
+* **👨‍🏫 Docente:** Ing. Edwin René Guamán Quinche
 * **💻 Carrera:** Computación (3.º Semestre)
 * **📅 Periodo Académico:** 2026 - 2027
 
