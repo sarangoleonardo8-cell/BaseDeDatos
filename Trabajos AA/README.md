@@ -6,7 +6,13 @@ Aquí se detallan los trabajos autónomos desarrollados durante el ciclo académ
 ---
 
 ## Trabajo Autónomo 1: Diseño de Modelo Entidad-Relación
-**Concepto:** En este trabajo se analizó los requerimientos de una plataforma de streaming para estructurar sus entidades, atributos y relaciones principales.
+**Concepto:** Sistema de Biblioteca
+Una biblioteca registra libros y autores. Un libro puede tener varios autores y un autor varios libros. Los socios toman libros prestados; de cada préstamo interesan la fecha de retiro y la de devolución.
+
+![Diagrama Entidad-Relación](./diagrama_er.png)
+
+**Concepto:** Sistema de Biblioteca
+Una biblioteca registra libros y autores. Un libro puede tener varios autores y un autor varios libros. Los socios toman libros prestados; de cada préstamo interesan la fecha de retiro y la de devolución.
 
 ![Diagrama Entidad-Relación](./diagrama_er.png)
 
