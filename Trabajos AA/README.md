@@ -6,7 +6,7 @@
 **Enunciado:** Una biblioteca registra libros y autores. Un libro puede tener varios autores y un autor varios libros. Los socios toman libros prestados; de cada préstamo interesan la fecha de retiro y la de devolución.
 
 ### Entidad Relación
-![Entidad Relación Sistema de Biblioteca](./imagenes/er_ejercicio1.png)
+![Entidad Relación Sistema de Biblioteca](./imagenes/Captura%20de%20pantalla%202026-11-12%20190959.png)
 
 ### Diagrama Relacional
 ![Diagrama Relacional Sistema de Biblioteca](./imagenes/mr_ejercicio1.png)
