@@ -44,10 +44,10 @@ CREATE TABLE autor (
 **Enunciado:** Los clientes realizan pedidos que contienen varios platos con distinta cantidad. Los platos se agrupan en categorías. Cada pedido lo atiende un único mesero. El precio del plato debe registrarse tal como estaba al momento del pedido, aunque luego cambie.
 
 ### Entidad Relación
-![Entidad Relación Pedidos de Restaurante](./imagenes/er_ejercicio2.png)
+![Entidad Relación Pedidos de Restaurante](./imagenes/Captura%20de%20pantalla%202026-11-12%20192132.png)
 
 ### Diagrama Relacional
-![Diagrama Relacional Pedidos de Restaurante](./imagenes/mr_ejercicio2.png)
+![Diagrama Relacional Pedidos de Restaurante](./imagenes/Captura%20de%20pantalla%202026-11-12%20190959.png)
 
 ### SQL
 ```sql
