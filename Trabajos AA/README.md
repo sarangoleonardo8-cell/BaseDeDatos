@@ -47,7 +47,7 @@ CREATE TABLE autor (
 ![Entidad Relación Pedidos de Restaurante](./imagenes/Captura%20de%20pantalla%202026-11-12%20192132.png)
 
 ### Diagrama Relacional
-![Diagrama Relacional Pedidos de Restaurante](./imagenes/Captura%20de%20pantalla%202026-11-12%20190959.png)
+![Diagrama Relacional Pedidos de Restaurante](./imagenes/Captura%20de%20pantalla%202026-11-12%20193608.png)
 
 ### SQL
 ```sql
@@ -95,10 +95,10 @@ CREATE TABLE detalle_pedido (
 **Enunciado:** Los pacientes solicitan citas; cada cita la atiende un médico a un paciente en fecha, hora y consultorio. De algunas citas se genera una receta que incluye medicamentos con dosis y duración. Cada médico pertenece a una especialidad.
 
 ### Entidad Relación
-![Entidad Relación Clínica Médica](./imagenes/er_ejercicio3.png)
+![Entidad Relación Clínica Médica](./imagenes/Captura%20de%20pantalla%202026-11-12%20193622.png)
 
 ### Diagrama Relacional
-![Diagrama Relacional Clínica Médica](./imagenes/mr_ejercicio3.png)
+![Diagrama Relacional Clínica Médica](./imagenes/Captura%20de%20pantalla%202026-11-12%20193632.png)
 
 ### SQL
 ```sql
@@ -152,10 +152,10 @@ CREATE TABLE receta_medicamento (
 **Enunciado:** Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cada vuelo lo realiza un avión. Los pasajeros realizan reservas para un vuelo específico, indicando asiento y tarifa pagada en el momento de la reserva.
 
 ### Entidad Relación
-![Entidad Relación Sistema de Aerolínea](./imagenes/er_ejercicio4.png)
+![Entidad Relación Sistema de Aerolínea](./imagenes/Captura%20de%20pantalla%202026-11-12%20193654.png)
 
 ### Diagrama Relacional
-![Diagrama Relacional Sistema de Aerolínea](./imagenes/mr_ejercicio4.png)
+![Diagrama Relacional Sistema de Aerolínea](./imagenes/Captura%20de%20pantalla%202026-11-12%20193707.png)
 
 ### SQL
 ```sql
@@ -195,10 +195,10 @@ CREATE TABLE reserva (
 * **Evento de promoción:** Los artistas participan en eventos de promoción para dar a conocer sus trabajos. En un evento de promoción pueden participar varios artistas. De un evento se almacena un identificador único, la fecha de celebración y el número de asistentes.
 
 ### Entidad Relación
-![Entidad Relación Empresa Discográfica](./imagenes/er_ejercicio5.png)
+![Entidad Relación Empresa Discográfica](./imagenes/Captura%20de%20pantalla%202026-11-12%20193727.png)
 
 ### Diagrama Relacional
-![Diagrama Relacional Empresa Discográfica](./imagenes/mr_ejercicio5.png)
+![Diagrama Relacional Empresa Discográfica](./imagenes/Captura%20de%20pantalla%202026-11-12%20193736.png)
 
 ### SQL
 ```sql
@@ -232,10 +232,10 @@ CREATE TABLE artista_evento (
 **Enunciado:** Se desea crear una aplicación para la gestión de una tienda informática. La tienda dispone de una serie de productos que se venden a los clientes. De cada producto informático se desea guardar el código, descripción, precio y número de existencias. De cada cliente se desea guardar el código, nombre, apellidos, dirección y número telefónico. Un cliente puede comprar varios productos en la tienda y un mismo producto puede ser comprado por varios clientes. Cada vez que se compre un artículo quedará registrada la compra en la base de datos junto con la fecha en la que se compró el artículo. La tienda tiene contactos con varios proveedores que son los que suministran los productos. Un mismo producto puede ser suministrado por varios proveedores. De cada proveedor se desea guardar el código, nombres, apellidos, dirección, provincia y número de teléfono.
 
 ### Entidad Relación
-![Entidad Relación Tienda Informática](./imagenes/er_ejercicio6.png)
+![Entidad Relación Tienda Informática](./imagenes/Captura%20de%20pantalla%202026-11-12%20193745.png)
 
 ### Diagrama Relacional
-![Diagrama Relacional Tienda Informática](./imagenes/mr_ejercicio6.png)
+![Diagrama Relacional Tienda Informática](./imagenes/Captura%20de%20pantalla%202026-11-12%20193803.png)
 
 ### SQL
 ```sql
@@ -283,10 +283,10 @@ CREATE TABLE suministra (
 **Enunciado:** La tienda vende discos de diferentes géneros musicales y cantantes. Cada género musical tiene un identificador. Cada disco tiene título, género musical, precio y cantante. De un cantante se registra el nombre y su país. Todo disco pertenece a un cantante y un cantante puede tener muchos discos. Además, un disco tiene un conjunto de canciones (identificador y título). Un disco tiene muchas canciones y una canción puede estar en varios discos. Interesa conocer la posición de una canción en un determinado disco.
 
 ### Entidad Relación
-![Entidad Relación Discos Musicales](./imagenes/er_ejercicio7.png)
+![Entidad Relación Discos Musicales](./imagenes/Captura%20de%20pantalla%202026-11-12%20193817.png)
 
 ### Diagrama Relacional
-![Diagrama Relacional Discos Musicales](./imagenes/mr_ejercicio7.png)
+![Diagrama Relacional Discos Musicales](./imagenes/Captura%20de%20pantalla%202026-11-12%20193829.png)
 
 ### SQL
 ```sql
@@ -328,10 +328,10 @@ CREATE TABLE disco_cancion (
 **Enunciado:** Se desea informatizar la gestión de una empresa de transporte que reparte paquetes por toda España. Los encargados de llevar los paquetes son los camioneros, de los que se quiere guardar la cédula, nombre, teléfono, dirección, salario y población en que vive. De los paquetes transportados interesa conocer el código del paquete, descripción, destinatario y dirección del destinatario. Un camionero distribuye muchos paquetes, y un paquete sólo puede ser distribuido por un camionero. De las provincias a las que llegan los paquetes interesa guardar el código de provincia y el nombre. Un paquete sólo puede llegar a una provincia. Sin embargo, a una provincia pueden llegar varios paquetes. De los camiones que llevan los camioneros, interesa conocer la matrícula, modelo, tipo y potencia. Un camionero puede conducir diferentes camiones en fechas diferentes, y un camión puede ser conducido por varios camioneros.
 
 ### Entidad Relación
-![Entidad Relación Camiones](./imagenes/er_ejercicio8.png)
+![Entidad Relación Camiones](./imagenes/Captura%20de%20pantalla%202026-11-12%20193845.png)
 
 ### Diagrama Relacional
-![Diagrama Relacional Camiones](./imagenes/mr_ejercicio8.png)
+![Diagrama Relacional Camiones](./imagenes/Captura%20de%20pantalla%202026-11-12%20193858.png)
 
 ### SQL
 ```sql
@@ -379,10 +379,10 @@ CREATE TABLE conduce (
 **Enunciado:** Del propietario interesa: cédula, apellidos, nombres, dirección, teléfonos. De la mascota interesa: identificador, nombre, fecha de nacimiento, tipo. Un propietario puede llevar una o varias mascotas, y una mascota la lleva uno y solo un propietario. Del personal de la clínica veterinaria interesa un código, cédula y nombre, distinguiendo veterinarios (fecha de alta y especialidad) y auxiliares (base de cotización), pudiendo haber otros tipos. Las mascotas pasan consulta con los veterinarios en fechas diferentes registrando un diagnóstico. Cada propietario tiene un familiar de contacto para emergencias (cédula, nombre y teléfono) que deja de interesar si el propietario se da de alta.
 
 ### Entidad Relación
-![Entidad Relación Veterinaria](./imagenes/er_ejercicio9.png)
+![Entidad Relación Veterinaria](./imagenes/Captura%20de%20pantalla%202026-11-12%20193915.png)
 
 ### Diagrama Relacional
-![Diagrama Relacional Veterinaria](./imagenes/mr_ejercicio9.png)
+![Diagrama Relacional Veterinaria](./imagenes/Captura%20de%20pantalla%202026-11-12%20193928.png)
 
 ### SQL
 ```sql
