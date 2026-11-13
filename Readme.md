@@ -22,7 +22,7 @@
 | Sección | Carpeta / Acceso Directo | Descripción |
 | :--- | :--- | :--- |
 | **📘 1. Trabajo Autónomo** | **[📂 Trabajos AA](./Trabajos%20AA)** | Ejercicios prácticos con diagramas Entidad-Relación, modelos relacionales y scripts SQL. |
-| **📝 2. Evaluación** | **[📂 Evaluación Unidad 1](./Evaluación%20Unidad%201)** | Evidencias y resoluciones correspondientes a la evaluación de la primera unidad. |
+| **📝 2. Evaluación** | **[📂 Evaluación Unidad 1](./Evaluaci%C3%B3n%20Unidad%201)** | Evidencias y resoluciones correspondientes a la evaluación de la primera unidad. |
 
 ---
 
