@@ -9,12 +9,12 @@ Aquí se detallan los trabajos autónomos desarrollados durante el ciclo académ
 **Concepto:** Sistema de Biblioteca
 Una biblioteca registra libros y autores. Un libro puede tener varios autores y un autor varios libros. Los socios toman libros prestados; de cada préstamo interesan la fecha de retiro y la de devolución.
 
-![Entidad-Relacion](./imagenes/Captura%20de%20pantalla%202026-11-12%20190959.png)
+![Diagrama Entidad-Relacion](./imagenes/Captura%20de%20pantalla%202026-11-12%20190959.png)
 
-**Concepto:** Sistema de Biblioteca
-Una biblioteca registra libros y autores. Un libro puede tener varios autores y un autor varios libros. Los socios toman libros prestados; de cada préstamo interesan la fecha de retiro y la de devolución.
+**Concepto:** Pedidos de Restaurante
+Los clientes realizan pedidos que contienen varios platos con distinta cantidad. Los platos se agrupan en categorías. Cada pedido lo atiende un único mesero. El precio del plato debe registrarse tal como estaba al momento del pedido, aunque luego cambie.
 
-![Diagrama Entidad-Relación](./diagrama_er.png)
+![Diagrama Entidad-Relación](./imagenes/Captura%20de%20pantalla%202026-11-12%20192132.png)
 
 ---
 
