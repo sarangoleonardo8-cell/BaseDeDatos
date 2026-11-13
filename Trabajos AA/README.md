@@ -10,7 +10,7 @@
 
 ## 🧭 Índice Rápido de Ejercicios
 
-| # | Ejercicio | Temática | Acceso Directo |
+| # | Ejercicio | Temática |
 | :---: | :--- | :--- | :---: |
 | **1** | 📚 **Sistema de Biblioteca** | Préstamos, libros, socios y autores | 
 | **2** | 🍽️ **Pedidos de Restaurante** | Pedidos, platos, categorías y meseros |
