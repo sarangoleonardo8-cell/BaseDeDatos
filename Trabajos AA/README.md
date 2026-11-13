@@ -297,4 +297,176 @@ CREATE TABLE compra (
 );
 CREATE TABLE suministra (
    codigo_proveedor VARCHAR(15) NOT NULL,
-   codigo_producto VARCHAR(15) NOT NULL
+   codigo_producto VARCHAR(15) NOT NULL,
+   PRIMARY KEY (codigo_proveedor, codigo_producto),
+   FOREIGN KEY (codigo_proveedor) REFERENCES proveedor(codigo),
+   FOREIGN KEY (codigo_producto) REFERENCES producto(codigo)
+);
+```
+[⬆️ Volver al índice](#-índice-rápido-de-ejercicios)
+
+---
+
+## 💿 Ejercicio 7: Discos Musicales
+> **📝 Enunciado:** La tienda vende discos de diferentes géneros musicales y cantantes. Cada género musical tiene un identificador. Cada disco tiene título, género musical, precio y cantante. De un cantante se registra el nombre y su país. Todo disco pertenece a un cantante y un cantante puede tener muchos discos. Además, un disco tiene un conjunto de canciones (identificador y título). Un disco tiene muchas canciones y una canción puede estar en varios discos. Interesa conocer la posición de una canción en un determinado disco.
+
+### 🧩 Entidad Relación
+![Entidad Relación Discos Musicales](./imagenes/Captura%20de%20pantalla%202026-11-12%20193817.png)
+
+### 🔗 Diagrama Relacional
+![Diagrama Relacional Discos Musicales](./imagenes/Captura%20de%20pantalla%202026-11-12%20193829.png)
+
+### 💻 SQL
+```sql
+CREATE TABLE genero_musical (
+   id_genero VARCHAR(15) PRIMARY KEY,
+   nombre VARCHAR(100) NOT NULL
+);
+CREATE TABLE cantante (
+   id_cantante VARCHAR(15) PRIMARY KEY,
+   nombre VARCHAR(100) NOT NULL,
+   pais VARCHAR(60) NOT NULL
+);
+CREATE TABLE cancion (
+   id_cancion VARCHAR(15) PRIMARY KEY,
+   titulo VARCHAR(150) NOT NULL
+);
+CREATE TABLE disco (
+   id_disco VARCHAR(15) PRIMARY KEY,
+   titulo VARCHAR(150) NOT NULL,
+   precio DECIMAL(10,2) NOT NULL,
+   id_genero VARCHAR(15) NOT NULL,
+   id_cantante VARCHAR(15) NOT NULL,
+   FOREIGN KEY (id_genero) REFERENCES genero_musical(id_genero),
+   FOREIGN KEY (id_cantante) REFERENCES cantante(id_cantante)
+);
+CREATE TABLE disco_cancion (
+   id_disco VARCHAR(15) NOT NULL,
+   id_cancion VARCHAR(15) NOT NULL,
+   posicion INT NOT NULL,
+   PRIMARY KEY (id_disco, id_cancion),
+   FOREIGN KEY (id_disco) REFERENCES disco(id_disco),
+   FOREIGN KEY (id_cancion) REFERENCES cancion(id_cancion)
+);
+```
+[⬆️ Volver al índice](#-índice-rápido-de-ejercicios)
+
+---
+
+## 🚚 Ejercicio 8: Camiones
+> **📝 Enunciado:** Se desea informatizar la gestión de una empresa de transporte que reparte paquetes por toda España. Los encargados de llevar los paquetes son los camioneros, de los que se quiere guardar la cédula, nombre, teléfono, dirección, salario y población en que vive. De los paquetes transportados interesa conocer el código del paquete, descripción, destinatario y dirección del destinatario. Un camionero distribuye muchos paquetes, y un paquete sólo puede ser distribuido por un camionero. De las provincias a las que llegan los paquetes interesa guardar el código de provincia y el nombre. Un paquete sólo puede llegar a una provincia. Sin embargo, a una provincia pueden llegar varios paquetes. De los camiones que llevan los camioneros, interesa conocer la matrícula, modelo, tipo y potencia. Un camionero puede conducir diferentes camiones en fechas diferentes, y un camión puede ser conducido por varios camioneros.
+
+### 🧩 Entidad Relación
+![Entidad Relación Camiones](./imagenes/Captura%20de%20pantalla%202026-11-12%20193845.png)
+
+### 🔗 Diagrama Relacional
+![Diagrama Relacional Camiones](./imagenes/Captura%20de%20pantalla%202026-11-12%20193858.png)
+
+### 💻 SQL
+```sql
+CREATE TABLE camionero (
+   cedula VARCHAR(15) PRIMARY KEY,
+   nombre VARCHAR(100) NOT NULL,
+   telefono VARCHAR(15) NOT NULL,
+   direccion VARCHAR(150) NOT NULL,
+   salario DECIMAL(10,2) NOT NULL,
+   poblacion VARCHAR(80) NOT NULL
+);
+CREATE TABLE provincia (
+   codigo_provincia VARCHAR(15) PRIMARY KEY,
+   nombre VARCHAR(100) NOT NULL
+);
+CREATE TABLE camion (
+   matricula VARCHAR(15) PRIMARY KEY,
+   modelo VARCHAR(50) NOT NULL,
+   tipo VARCHAR(50) NOT NULL,
+   potencia INT NOT NULL
+);
+CREATE TABLE paquete (
+   codigo_paquete VARCHAR(15) PRIMARY KEY,
+   descripcion VARCHAR(200) NOT NULL,
+   destinatario VARCHAR(100) NOT NULL,
+   direccion_destinatario VARCHAR(150) NOT NULL,
+   cedula VARCHAR(15) NOT NULL,
+   codigo_provincia VARCHAR(15) NOT NULL,
+   FOREIGN KEY (cedula) REFERENCES camionero(cedula),
+   FOREIGN KEY (codigo_provincia) REFERENCES provincia(codigo_provincia)
+);
+CREATE TABLE conduce (
+   cedula VARCHAR(15) NOT NULL,
+   matricula VARCHAR(15) NOT NULL,
+   fecha DATE NOT NULL,
+   PRIMARY KEY (cedula, matricula, fecha),
+   FOREIGN KEY (cedula) REFERENCES camionero(cedula),
+   FOREIGN KEY (matricula) REFERENCES camion(matricula)
+);
+```
+[⬆️ Volver al índice](#-índice-rápido-de-ejercicios)
+
+---
+
+## 🐾 Ejercicio 9: Veterinaria
+> **📝 Enunciado:** Del propietario interesa: cédula, apellidos, nombres, dirección, teléfonos. De la mascota interesa: identificador, nombre, fecha de nacimiento, tipo. Un propietario puede llevar una o varias mascotas, y una mascota la lleva uno y solo un propietario. Del personal de la clínica veterinaria interesa un código, cédula y nombre, distinguiendo veterinarios (fecha de alta y especialidad) y auxiliares (base de cotización), pudiendo haber otros tipos. Las mascotas pasan consulta con los veterinarios en fechas diferentes registrando un diagnóstico. Cada propietario tiene un familiar de contacto para emergencias (cédula, nombre y teléfono) que deja de interesar si el propietario se da de alta.
+
+### 🧩 Entidad Relación
+![Entidad Relación Veterinaria](./imagenes/Captura%20de%20pantalla%202026-11-12%20193915.png)
+
+### 🔗 Diagrama Relacional
+![Diagrama Relacional Veterinaria](./imagenes/Captura%20de%20pantalla%202026-11-12%20193928.png)
+
+### 💻 SQL
+```sql
+CREATE TABLE propietario (
+   cedula VARCHAR(15) PRIMARY KEY,
+   apellidos VARCHAR(100) NOT NULL,
+   nombres VARCHAR(100) NOT NULL,
+   direccion VARCHAR(150) NOT NULL
+);
+CREATE TABLE telefono_propietario (
+   cedula VARCHAR(15) NOT NULL,
+   telefono VARCHAR(15) NOT NULL,
+   PRIMARY KEY (cedula, telefono),
+   FOREIGN KEY (cedula) REFERENCES propietario(cedula) ON DELETE CASCADE
+);
+CREATE TABLE familiar (
+   cedula_propietario VARCHAR(15) PRIMARY KEY,
+   cedula_familiar VARCHAR(15) NOT NULL,
+   nombre VARCHAR(100) NOT NULL,
+   telefono VARCHAR(15) NOT NULL,
+   FOREIGN KEY (cedula_propietario) REFERENCES propietario(cedula) ON DELETE CASCADE
+);
+CREATE TABLE mascota (
+   id_mascota VARCHAR(15) PRIMARY KEY,
+   nombre VARCHAR(100) NOT NULL,
+   fecha_nacimiento DATE NOT NULL,
+   tipo VARCHAR(50) NOT NULL,
+   cedula_propietario VARCHAR(15) NOT NULL,
+   FOREIGN KEY (cedula_propietario) REFERENCES propietario(cedula)
+);
+CREATE TABLE personal (
+   codigo VARCHAR(15) PRIMARY KEY,
+   cedula VARCHAR(15) NOT NULL UNIQUE,
+   nombre VARCHAR(100) NOT NULL
+);
+CREATE TABLE veterinario (
+   codigo VARCHAR(15) PRIMARY KEY,
+   fecha_alta DATE NOT NULL,
+   especialidad VARCHAR(100) NOT NULL,
+   FOREIGN KEY (codigo) REFERENCES personal(codigo)
+);
+CREATE TABLE auxiliar (
+   codigo VARCHAR(15) PRIMARY KEY,
+   base_cotizacion DECIMAL(10,2) NOT NULL,
+   FOREIGN KEY (codigo) REFERENCES personal(codigo)
+);
+CREATE TABLE consulta (
+   id_mascota VARCHAR(15) NOT NULL,
+   codigo_veterinario VARCHAR(15) NOT NULL,
+   fecha DATE NOT NULL,
+   diagnostico VARCHAR(255) NOT NULL,
+   PRIMARY KEY (id_mascota, codigo_veterinario, fecha),
+   FOREIGN KEY (id_mascota) REFERENCES mascota(id_mascota),
+   FOREIGN KEY (codigo_veterinario) REFERENCES veterinario(codigo)
+);
+```
+[⬆️ Volver al índice](#-índice-rápido-de-ejercicios)
