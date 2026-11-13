@@ -9,7 +9,7 @@
 ![Entidad Relación Sistema de Biblioteca](./imagenes/Captura%20de%20pantalla%202026-11-12%20190959.png)
 
 ### Diagrama Relacional
-![Diagrama Relacional Sistema de Biblioteca](./imagenes/mr_ejercicio1.png)
+![Diagrama Relacional Sistema de Biblioteca](./imagenes/Captura%20de%20pantalla%202026-11-12%20193236.png)
 
 ### SQL
 ```sql
