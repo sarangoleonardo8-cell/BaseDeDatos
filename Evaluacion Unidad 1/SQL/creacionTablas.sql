@@ -1,16 +1,8 @@
-CREATE DATABASE IF NOT EXISTS streaming_db
-    CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE streaming_db;
-
--- ---------------------------
--- 1. CREACION DE TABLAS (DDL)
--- ---------------------------
-
 CREATE TABLE usuario (
     id_usuario  VARCHAR(10)  NOT NULL,
     nombre      VARCHAR(100) NOT NULL,
     correo      VARCHAR(120) NOT NULL UNIQUE,
-    contrasena  VARCHAR(255) NOT NULL,          -- se guarda el hash, no la clave
+    contrasena  VARCHAR(255) NOT NULL,          
     PRIMARY KEY (id_usuario)
 );
 
@@ -37,7 +29,7 @@ CREATE TABLE plan (
 CREATE TABLE suscripcion (
     id_suscripcion  VARCHAR(10) NOT NULL,
     fecha_inicio    DATE        NOT NULL,
-    fecha_fin       DATE,                         -- NULL = sin fecha de fin
+    fecha_fin       DATE,                         
     estado          VARCHAR(15) NOT NULL DEFAULT 'Activa',
     id_usuario      VARCHAR(10) NOT NULL,
     id_plan         VARCHAR(10) NOT NULL,
@@ -64,7 +56,7 @@ CREATE TABLE contenido (
     id_contenido       VARCHAR(10)  NOT NULL,
     titulo             VARCHAR(150) NOT NULL,
     tipo               VARCHAR(15)  NOT NULL,
-    duracion           INT          NOT NULL,     -- minutos (por episodio en series)
+    duracion           INT          NOT NULL,    
     anio_estreno       SMALLINT     NOT NULL,
     clasificacion_edad VARCHAR(10)  NOT NULL DEFAULT 'Todos',
     PRIMARY KEY (id_contenido),
@@ -79,7 +71,6 @@ CREATE TABLE genero (
     PRIMARY KEY (id_genero)
 );
 
--- Tabla intermedia de la relacion muchos a muchos contenido - genero
 CREATE TABLE contenido_genero (
     id_contenido  VARCHAR(10) NOT NULL,
     id_genero     VARCHAR(10) NOT NULL,
