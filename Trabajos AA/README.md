@@ -10,17 +10,17 @@
 
 ## 🧭 Índice Rápido de Ejercicios
 
-| # | Ejercicio | Temática ||
-| :---: | :--- | :--- | :---: |
-| **1** | 📚 **Sistema de Biblioteca** | Préstamos, libros, socios y autores | 
-| **2** | 🍽️ **Pedidos de Restaurante** | Pedidos, platos, categorías y meseros |
-| **3** | 🏥 **Clínica Médica** | Citas, médicos, recetas y medicamentos | 
-| **4** | ✈️ **Sistema de Aerolínea** | Vuelos, aviones, pasajeros y reservas |
-| **5** | 🎵 **Empresa Discográfica** | Managers, artistas y eventos de promoción |
-| **6** | 💻 **Tienda Informática** | Ventas, clientes, productos y proveedores |
-| **7** | 💿 **Discos Musicales** | Discos, géneros, cantantes y canciones |
-| **8** | 🚚 **Camiones** | Transporte, camioneros, paquetes y provincias |
-| **9** | 🐾 **Veterinaria** | Mascotas, propietarios, consultas y personal | 
+| # | Ejercicio | Temática |
+| :---: | :--- | :--- |
+| **1** | 📚 **Sistema de Biblioteca** | Préstamos, libros, socios y autores 
+| **2** | 🍽️ **Pedidos de Restaurante** | Pedidos, platos, categorías y meseros 
+| **3** | 🏥 **Clínica Médica** | Citas, médicos, recetas y medicamentos 
+| **4** | ✈️ **Sistema de Aerolínea** | Vuelos, aviones, pasajeros y reservas 
+| **5** | 🎵 **Empresa Discográfica** | Managers, artistas y eventos de promoción 
+| **6** | 💻 **Tienda Informática** | Ventas, clientes, productos y proveedores 
+| **7** | 💿 **Discos Musicales** | Discos, géneros, cantantes y canciones 
+| **8** | 🚚 **Camiones** | Transporte, camioneros, paquetes y provincias 
+| **9** | 🐾 **Veterinaria** | Mascotas, propietarios, consultas y personal 
 
 ---
 
