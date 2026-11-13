@@ -12,15 +12,15 @@
 
 | # | Ejercicio | Temática | Acceso Directo |
 | :---: | :--- | :--- | :---: |
-| **1** | 📚 **Sistema de Biblioteca** | Préstamos, libros, socios y autores | [Ir al Ejercicio 1](#ejemplo-1-sistema-de-biblioteca) |
-| **2** | 🍽️ **Pedidos de Restaurante** | Pedidos, platos, categorías y meseros | [Ir al Ejercicio 2](#ejemplo-2-pedidos-de-restaurante) |
-| **3** | 🏥 **Clínica Médica** | Citas, médicos, recetas y medicamentos | [Ir al Ejercicio 3](#ejemplo-3-clínica-médica) |
-| **4** | ✈️ **Sistema de Aerolínea** | Vuelos, aviones, pasajeros y reservas | [Ir al Ejercicio 4](#ejemplo-4-sistema-de-aerolínea) |
-| **5** | 🎵 **Empresa Discográfica** | Managers, artistas y eventos de promoción | [Ir al Ejercicio 5](#ejercicio-5-empresa-discográfica) |
-| **6** | 💻 **Tienda Informática** | Ventas, clientes, productos y proveedores | [Ir al Ejercicio 6](#ejercicio-6-tienda-informática) |
-| **7** | 💿 **Discos Musicales** | Discos, géneros, cantantes y canciones | [Ir al Ejercicio 7](#ejercicio-7-discos-musicales) |
-| **8** | 🚚 **Camiones** | Transporte, camioneros, paquetes y provincias | [Ir al Ejercicio 8](#ejercicio-8-camiones) |
-| **9** | 🐾 **Veterinaria** | Mascotas, propietarios, consultas y personal | [Ir al Ejercicio 9](#ejercicio-9-veterinaria) |
+| **1** | 📚 **Sistema de Biblioteca** | Préstamos, libros, socios y autores | 
+| **2** | 🍽️ **Pedidos de Restaurante** | Pedidos, platos, categorías y meseros |
+| **3** | 🏥 **Clínica Médica** | Citas, médicos, recetas y medicamentos | 
+| **4** | ✈️ **Sistema de Aerolínea** | Vuelos, aviones, pasajeros y reservas |
+| **5** | 🎵 **Empresa Discográfica** | Managers, artistas y eventos de promoción |
+| **6** | 💻 **Tienda Informática** | Ventas, clientes, productos y proveedores |
+| **7** | 💿 **Discos Musicales** | Discos, géneros, cantantes y canciones |
+| **8** | 🚚 **Camiones** | Transporte, camioneros, paquetes y provincias |
+| **9** | 🐾 **Veterinaria** | Mascotas, propietarios, consultas y personal | 
 
 ---
 
